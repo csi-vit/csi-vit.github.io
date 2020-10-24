@@ -1,0 +1,17 @@
+{
+  "name": "CSI VIT",
+  "short_name": "CSI VIT",
+  "description": "Computer Society of India Vidyalankar Institute of Technology Student Chapter",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#111",
+  "background_color": "#000",
+  "icons": [
+    {
+      "src": "logos/logo2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
