@@ -517,6 +517,12 @@ body {
   color: rgb(149, 224, 194);
 }
 
+@media only screen and (max-width: 992px) {
+  .colab {
+    width: 25%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .scroll__anim {
     transform: scale(0.5);
@@ -626,6 +632,17 @@ body {
     padding: 5%;
     flex-direction: column;
   }
+  .colab {
+    width: 30%;
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .colab {
+    width: 35%;
+    margin-top: 2.5rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -687,6 +704,20 @@ body {
 
   .buttonText {
     font-size: 0.75rem;
+  }
+  .colab {
+    width: 40%;
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .colab {
+    width: 45%;
+    margin-top: 2.5rem;
+  }
+  .tabName {
+    font-size: 2.5rem;
   }
 }
 
