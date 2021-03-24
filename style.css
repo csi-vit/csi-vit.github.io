@@ -1,3 +1,37 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Shubhra2001 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+csi-vit
+/
+csi-vit.github.io
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+csi-vit.github.io/style.css
+@csi-vit
+csi-vit Add files via upload
+Latest commit a47c726 29 minutes ago
+ History
+ 1 contributor
+763 lines (656 sloc)  10.9 KB
+  
 .scroll__anim {
   position: absolute;
   bottom: 14%;
@@ -195,9 +229,19 @@ body {
   font-size: 1.5rem;
 }
 
+.colab {
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 1.5rem;
+}
+
 .tabName {
   width: auto;
-  margin-left: 3%;
+  margin-left: 5%;
   margin-top: 2%;
   font-size: 4rem;
 }
@@ -337,7 +381,7 @@ body {
 }
 
 .buttonText {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .eventLeft {
@@ -467,6 +511,10 @@ body {
 .socialIcons:hover {
   transition: 0.6s ease;
   transform: scale(1.1);
+}
+
+.incubate-link {
+  color: rgb(149, 224, 194);
 }
 
 @media only screen and (max-width: 768px) {
@@ -761,3 +809,16 @@ body {
     margin-bottom: 5%;
   }
 }
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+42 results found.
