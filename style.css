@@ -246,6 +246,13 @@ body {
   font-size: 4rem;
 }
 
+.tabNameSmall {
+  width: auto;
+  margin-left: 5%;
+  margin-top: 2%;
+  font-size: 3rem;
+}
+
 .tabNameSubHeading {
   width: auto;
   margin-left: 3%;
