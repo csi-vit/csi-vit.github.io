@@ -172,7 +172,7 @@ body {
 .roundPic {
   border-radius: 20em;
   border: solid white 2px;
-  overflow: hidden;
+ /* overflow: hidden;*/
 }
 
 .gridContainer {
@@ -249,7 +249,7 @@ body {
 .tabName {
   width: auto;
   margin-left: 5%;
-  margin-top: 1%;
+  /*margin-top: 1%;*/
   font-size: 3.5rem;
 }
 
@@ -281,8 +281,14 @@ body {
 }
 
 .mugshot-logo {
-  width: 100%;
+  width: 80%;
   height: auto;
+}
+
+.vit-logo {
+  width: 30%;
+  height: auto;
+  margin-left: -2rem;
 }
 
 .footer {
@@ -550,6 +556,9 @@ body {
     width: 25%;
     margin-top: 3%;
   }
+  .vit-logo {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -669,12 +678,18 @@ body {
     width: 30%;
     margin-top: 2.5rem;
   }
+  .vit-logo {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .colab {
     width: 35%;
     margin-top: 2.5rem;
+  }
+  .vit-logo {
+    width: 40%;
   }
 }
 
@@ -742,6 +757,9 @@ body {
     width: 40%;
     margin-top: 2.5rem;
   }
+  .vit-logo {
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width: 300px) {
@@ -751,6 +769,9 @@ body {
   }
   .tabName {
     font-size: 2.5rem;
+  }
+  .vit-logo {
+    width: 50%;
   }
 }
 
