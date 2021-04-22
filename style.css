@@ -5,8 +5,8 @@ Pull requests
 Issues
 Marketplace
 Explore
- 
-@Shubhra2001 
+
+@Shubhra2001
 Learn Git and GitHub without any code!
 Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
 
@@ -31,7 +31,7 @@ Latest commit a47c726 29 minutes ago
  History
  1 contributor
 763 lines (656 sloc)  10.9 KB
-  
+
 .scroll__anim {
   position: absolute;
   bottom: 14%;
@@ -286,9 +286,9 @@ body {
 }
 
 .vit-logo {
-  width: 30%;
+  width: 25%;
   height: auto;
-  margin-left: -2rem;
+  margin-left: -0.5rem;
 }
 
 .footer {
@@ -403,6 +403,7 @@ body {
 .eventDetails {
   font-size: 1rem;
   margin-bottom: 5%;
+  margin-right: 10%;
 }
 
 .eventNameHome {
@@ -412,6 +413,7 @@ body {
 .eventDetailsHome {
   font-size: 1.5rem;
   margin-bottom: 5%;
+  margin-right: 10%;
 }
 
 .buttonText {
