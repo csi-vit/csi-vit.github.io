@@ -1,0 +1,542 @@
+<html>
+  <head>
+    <title>CSI-VIT</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="512x512" href="logos/logo2.png">
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon"
+      type="image/png"
+      href="logos/logo2.png" />
+  </head>
+  <style>
+    @font-face {
+      font-family: sf;
+      src: url("fonts/AvantGardeBookBT.ttf");
+    }
+    @font-face {
+      font-family: sfbold;
+      src: url("fonts/AvantGardeDemiBT.ttf");
+    }
+  </style>
+  <body>
+    <div class="homeTab tab">
+        <div class="tabName">Home</div>
+        <div class="gridContainer">
+          <div class="teamName">Upcoming Event</div>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1 m-4">
+              <div class="w-full md:w-4/5 lg:w-4/5 mx-auto eventCard">
+                <div class="eventLeft">
+                  <div class="eventPoster"><img src="media/event.png" ></img></div>
+                  <div class="eventNameHome">Incognito</div>
+                  <div class="eventDetailsHome">A Week Full of Coding</div>
+                </div>
+                <div>
+                  <div class="eventDetailsHome">26th - 30th April</div>
+                  <div class="eventDetailsHome"><a target='_blank' href='https://discord.gg/2Ku4B4kkNq' class="incubate-link">Join Discord for more updates</a></div>
+                  <a href="incognito.html" target="_blank" class="buttonHome"><div class="buttonText">View</div></a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="gridContainer">
+          <div class="teamName">Recent Event</div>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1 m-4">
+            <div class="w-full md:w-4/5 lg:w-4/5 mx-auto eventCard">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventNameHome">Psych Out</div>
+                <div class="eventDetailsHome">A puzzle competition</div>
+              </div>
+              <div>
+                <div class="eventDetailsHome">19th - 23rd March</div>
+                <div class="eventDetailsHome">YouTube @5:00 pm</div>
+                <a href="psychOut.html" class="buttonHome"><div class="buttonText">View</div></a>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="w-full scrollBuffer">
+          <div class="eventLeft">
+            <div class="eventPoster"><img src="media/event.png" ></img></div>
+            <div class="eventName">Digital Profile</div>
+            <div class="eventDetails">Event on building a digital profile</div>
+          </div>
+          <div>
+            <div class="eventDetails">On 20th September</div>
+            <div class="eventDetails">YouTube @5:00 pm</div>
+            <a class="button"><div class="buttonText">Register</div></a>
+          </div>
+        </div>
+    </div>
+    <div class="teamTab tab">
+      <div class="scroll__trigger"></div>
+      <div class="scroll__trigger2"></div>
+      <div class="scrollIntro">
+        <div class="scroll__anim">
+          <div class="scroll__line"></div>
+          <div class="scroll__letter">S</div>
+          <div class="scroll__letter">C</div>
+          <div class="scroll__letter">R</div>
+          <div class="scroll__letter">O</div>
+          <div class="scroll__letter">L</div>
+          <div class="scroll__letter">L</div>
+        </div>
+        <svg class="scroller__svg" width="731" height="219" viewBox="0 0 731 219" fill="none" stroke-width="4" stroke="#dddddd" xmlns="http://www.w3.org/2000/svg">
+          <path d="M610.572 78.0625C617.115 68.7852 625.221 61.7539 634.889 56.9688C644.654 52.0859 655.543 49.6445 667.555 49.6445C689.43 49.6445 705.348 56.2363 715.309 69.4199C725.27 82.5059 730.25 103.6 730.25 132.701V214H710.475V128.453C710.475 107.164 706.959 92.0273 699.928 83.043C692.896 73.9609 681.422 69.4199 665.504 69.4199C656.324 69.4199 648.219 71.3242 641.188 75.1328C634.254 78.8438 628.736 84.2148 624.635 91.2461C622.193 95.6406 620.436 100.67 619.361 106.334C618.287 111.9 617.75 121.666 617.75 135.631V214H598.268V123.766C598.268 105.211 594.508 91.5391 586.988 82.75C579.469 73.8633 567.945 69.4199 552.418 69.4199C543.043 69.4199 534.791 71.3242 527.662 75.1328C520.631 78.8438 515.064 84.2148 510.963 91.2461C508.424 95.6406 506.617 100.67 505.543 106.334C504.566 111.9 504.078 121.666 504.078 135.631V214H483.717V52.8672H504.078V71.1777C510.23 64.0488 517.457 58.6777 525.758 55.0645C534.156 51.4512 543.629 49.6445 554.176 49.6445C566.383 49.6445 577.516 52.2324 587.574 57.4082C597.633 62.4863 605.299 69.3711 610.572 78.0625Z" />
+          <path d="M431.129 132.408C431.129 115.318 425.025 100.426 412.818 87.7305C400.611 74.9375 386.549 68.541 370.631 68.541C353.346 68.541 338.6 74.9375 326.393 87.7305C314.283 100.426 308.229 116.197 308.229 135.045C308.229 153.014 314.283 168.199 326.393 180.602C338.502 192.906 353.053 199.059 370.045 199.059C386.451 199.059 400.709 192.564 412.818 179.576C425.025 166.49 431.129 150.768 431.129 132.408ZM431.129 188.512C424.684 197.789 415.943 205.064 404.908 210.338C393.971 215.611 382.154 218.248 369.459 218.248C345.826 218.248 326.148 210.191 310.426 194.078C294.703 177.867 286.842 157.896 286.842 134.166C286.842 110.045 294.85 89.8789 310.865 73.668C326.979 57.457 347.096 49.3516 371.217 49.3516C383.619 49.3516 394.996 51.8906 405.348 56.9688C415.699 61.9492 424.293 69.1758 431.129 78.6484V52.8672H451.344V214H431.129V188.512Z" />
+          <path d="M271.168 139.879H125.709C126.979 157.457 133.326 171.666 144.752 182.506C156.178 193.346 170.436 198.766 187.525 198.766C199.635 198.766 210.523 195.641 220.191 189.391C229.859 183.043 237.33 174.254 242.604 163.023H266.041C258.619 180.895 248.17 194.615 234.693 204.186C221.314 213.756 205.787 218.541 188.111 218.541C164.674 218.541 144.85 210.191 128.639 193.492C112.428 176.793 104.322 156.725 104.322 133.287C104.322 108.775 112.232 88.5117 128.053 72.4961C143.971 56.4805 164.283 48.4727 188.99 48.4727C213.209 48.4727 232.936 56.8223 248.17 73.5215C263.502 90.123 271.168 111.754 271.168 138.414V139.879ZM248.316 122.447C244.41 104.381 237.232 90.8066 226.783 81.7246C216.334 72.5449 202.711 67.9551 185.914 67.9551C170.289 67.9551 157.057 72.8867 146.217 82.75C135.377 92.5156 128.736 105.748 126.295 122.447H248.316Z" />
+          <path d="M64.332 214H43.3848V21.666H0.757812V0.71875H106.959V21.666H64.332V214Z" />
+        </svg>
+      </div>
+      <div class="content">
+        <div class="tabName">Team</div>
+        <div class="gridContainer">
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4 m-4">
+              <div class="w-full card">
+                <div class="mugshot"><img style= "opacity:0" src="Mugshots/amit_sir.png" ></img></div>
+                <div class="post">Department Head</div>
+                <div class="name">Prof. Arun Chavan</div>
+              </div>
+              <div class="w-full card">
+                <div class="mugshot"><img style= "opacity:0" src="Mugshots/amit_sir.png " ></img></div>
+                <div class="post">Convener</div>
+                <div class="name">Prof. Sachin Deshpande</div>
+              </div>
+              <div class="w-full card">
+                <div class="mugshot"><img src="Mugshots/amit_sir.png " ></img></div>
+                <div class="post">Convener</div>
+                <div class="name">Prof. Amit Nerurkar</div>
+              </div>
+              <div class="w-full card">
+                <div class="mugshot"><img src="Mugshots/mohini_maam.png " ></img></div>
+                <div class="post">Convener</div>
+                <div class="name">Prof. Mohini Choudhari</div>
+              </div>
+            </div>
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-5 lg:grid-cols-5 m-4">
+              <div class="w-full card">
+                <div class="mugshot"><img src="Mugshots/chitral.png " ></img></div>
+                <div class="post">Chairperson</div>
+                <div class="name">Chitral Patil</div>
+              </div>
+              <div class="w-full card">
+                <div class="mugshot"><img src="Mugshots/nilakshi.png " ></img></div>
+                <div class="post">General Secretary</div>
+                <div class="name">Nilakshi Nagrale</div>
+              </div>
+              <div class="w-full card">
+                <div class="mugshot"><img src="Mugshots/archita.png " ></img></div>
+                <div class="post">Joint Secretary</div>
+                <div class="name">Archita Dube</div>
+              </div>
+              <div class="w-full card">
+                <div class="mugshot"><img src="Mugshots/vikrant.png " ></img></div>
+                <div class="post">Webmaster</div>
+                <div class="name">Vikrant Gurav</div>
+              </div>
+              <div class="w-full card">
+                <div class="mugshot"><img src="Mugshots/piyushppatil.png " ></img></div>
+                <div class="post">Webmaster</div>
+                <div class="name">Piyush Patil</div>
+              </div>
+            </div>
+          <div class="teamContainer">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                <div class="team">
+                  <div class="teamName">Technical Team</div>
+                    <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                        <div class="w-full card">
+                          <div class="mugshot"><img src="Mugshots/sumit.png " ></img></div>
+                          <div class="post">Head</div>
+                          <div class="name">Sumith Pevekar</div>
+                        </div>
+                        <div class="w-full card">
+                          <div class="mugshot"><img src="Mugshots/nimish.png " ></img></div>
+                          <div class="post">Co-Head</div>
+                          <div class="name">Nimish Samant</div>
+                        </div>
+                      </div>
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                          <div class="w-full h-1/2 card">
+                            <div class="workforce">Workforce</div>
+                            <div class="nameWorkforce">Dishant Kumar</div>
+                            <div class="nameWorkforce">Samarjeet Singh Gaidhu</div>
+                            <div class="nameWorkforce">Yogesh Kulkarni</div>
+                            <div class="nameWorkforce">Heramba Limaye</div>
+                            <div class="nameWorkforceBuffer">Elon Musk</div>
+                            <div class="nameWorkforceBuffer">Elon Musk</div>
+                          </div>
+                        </div>
+                </div>
+                <div class="team">
+                  <div class="teamName">Publicity Team</div>
+                    <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                        <div class="w-full card">
+                          <div class="mugshot"><img src="Mugshots/shreyas.png " ></img></div>
+                          <div class="post">Head</div>
+                          <div class="name">Shreyas Suresh</div>
+                        </div>
+                        <div class="w-full card">
+                          <div class="mugshot"><img src="Mugshots/harshada_sapkale.png " ></img></div>
+                          <div class="post">Co-Head</div>
+                          <div class="name">Harshada Sapkale</div>
+                        </div>
+                      </div>
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                          <div class="w-full h-1/2 card">
+                            <div class="workforce">Workforce</div>
+                            <div class="nameWorkforce">Saamiya Newrekar</div>
+                            <div class="nameWorkforce">Hrishika Samani</div>
+                            <div class="nameWorkforce">Harshada Chavan</div>
+                            <div class="nameWorkforce">Srushti Waingade</div>
+                            <div class="nameWorkforce">Om Devlekar</div>
+                            <div class="nameWorkforce">Bhumika Agrawal</div>
+                          </div>
+                        </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+              <div class="team">
+                <div class="teamName">Sponsership Team</div>
+                  <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                      <div class="w-full card">
+                        <div class="mugshot"><img src="Mugshots/mohit.png " ></img></div>
+                        <div class="post">Head</div>
+                        <div class="name">Mohit Chandorkar</div>
+                      </div>
+                      <div class="w-full card">
+                        <div class="mugshot"><img src="Mugshots/kunal.png " ></img></div>
+                        <div class="post">Co-Head</div>
+                        <div class="name">Kunal Yeole</div>
+                      </div>
+                    </div>
+                  <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                        <div class="w-full h-1/2 card">
+                          <div class="workforce">Workforce</div>
+                          <div class="nameWorkforce">Chetan Zagade</div>
+                          <div class="nameWorkforce">Akshaj Salvi</div>
+                        </div>
+                      </div>
+              </div>
+              <div class="team">
+                <div class="teamName">Digi Marketing Team</div>
+                  <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                      <div class="w-full card">
+                        <div class="mugshot"><img src="Mugshots/gravit.png " ></img></div>
+                        <div class="post">Head</div>
+                        <div class="name">Gravit Hingad</div>
+                      </div>
+                      <div class="w-full card">
+                        <div class="mugshot"><img src="Mugshots/rujuta.png " ></img></div>
+                        <div class="post">Co-Head</div>
+                        <div class="name">Rujuta Lanke</div>
+                      </div>
+                    </div>
+                  <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                        <div class="w-full h-1/2 card">
+                          <div class="workforce">Workforce</div>
+                          <div class="nameWorkforce">Mayuresh Veeramallu</div>
+                          <div class="nameWorkforceBuffer">Elon Musk</div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                      <div class="team">
+                        <div class="teamName">Documentation Team</div>
+                          <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                              <div class="card">
+                                  <div class="w-1/2 singleCard">
+                                      <div class="mugshot"><img src="Mugshots/ridima_tambde.png " ></img></div>
+                                      <div class="post">Head</div>
+                                      <div class="name">Ridima Tambde</div>
+                                  </div>
+                              </div>
+                            </div>
+                          <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                                <div class="w-full h-1/2 card">
+                                  <div class="workforce">Workforce</div>
+                                  <div class="nameWorkforce">Tuba Momin</div>
+                                  <div class="nameWorkforce">Tanvi Kokate</div>
+                                  <div class="nameWorkforce">Ayushi Bhagat</div>
+                                  <div class="nameWorkforce">Nandini Mishra</div>
+                                  <div class="nameWorkforce">Janhavi Kalwar</div>
+                                  <div class="nameWorkforceBuffer">Elon Musk</div>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="team">
+                        <div class="teamName">Creative Team</div>
+                          <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                              <div class="card">
+                                  <div class="w-1/2 singleCard">
+                                      <div class="mugshot"><img src="Mugshots/shrey.png " ></img></div>
+                                      <div class="post">Head</div>
+                                      <div class="name">Shrey Solanki</div>
+                                  </div>
+                              </div>
+                            </div>
+                          <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                                <div class="w-full h-1/2 card">
+                                  <div class="workforce">Workforce</div>
+                                  <div class="nameWorkforce">Kaveya Sivaprakasam</div>
+                                  <div class="nameWorkforce">Abhinav</div>
+                                  <div class="nameWorkforce">Chaitanya Sawsakde</div>
+                                  <div class="nameWorkforce">Sanika Chavan</div>
+                                  <div class="nameWorkforce">Shruti Nagwekar</div>
+                                  <div class="nameWorkforce">Omkar Karle</div>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                      <div class="team">
+                        <div class="teamName">Events Team</div>
+                          <div class="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4">
+                              <div class="w-full card">
+                                <div class="mugshot"><img src="Mugshots/shubhankar.png " ></img></div>
+                                <div class="post">Head</div>
+                                <div class="name">Shubhankar Yevale</div>
+                              </div>
+                              <div class="w-full card">
+                                <div class="mugshot"><img src="Mugshots/parth.png " ></img></div>
+                                <div class="post">Co-Head</div>
+                                <div class="name">Parth Kotak</div>
+                              </div>
+                          </div>
+                          <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+                                <div class="w-full h-1/2 card">
+                                  <div class="workforce">Workforce</div>
+                                  <div class="nameWorkforce">Ritika Lath</div>
+                                  <div class="nameWorkforce">Priyank Bagad</div>
+                                  <div class="nameWorkforce">Deep Shahane</div>
+                                  <div class="nameWorkforce">Khyati Maru</div>
+                                  <div class="nameWorkforce">Siddhi Pawar</div>
+                                  <div class="nameWorkforce">Siddharth Pawar</div>
+                                  <div class="nameWorkforce">Gaurav Muley</div>
+                                  <div class="nameWorkforce">Vaishnavi C</div>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+          </div>
+        </div>
+        <div class="w-full scrollBuffer">
+          <div class="eventLeft">
+            <div class="eventPoster"><img src="media/event.png" ></img></div>
+            <div class="eventName">Digital Profile</div>
+            <div class="eventDetails">Event on building a digital profile</div>
+          </div>
+          <div>
+            <div class="eventDetails">On 20th September</div>
+            <div class="eventDetails">YouTube @5:00 pm</div>
+            <a class="button"><div class="buttonText">Register</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="eventsTab tab">
+      <div class="tabName">Events</div>
+      <div class="gridContainer">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 m-4">
+          <div class="w-full eventCard">
+            <div class="eventLeft">
+              <div class="eventPoster"><img src="media/event.png" ></img></div>
+              <div class="eventName">Incognito</div>
+              <div class="eventDetails">A week full of coding</div>
+            </div>
+            <div>
+              <div class="eventDetails">26th - 30th April</div>
+              <div class="eventDetails">YouTube @5:00 pm</div>
+              <a href="incognito.html" class="button"><div class="buttonText">View</div></a>
+            </div>
+          </div>
+            <div class="w-full eventCard">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventName">Psych Out</div>
+                <div class="eventDetails">A puzzle competition</div>
+              </div>
+              <div>
+                <div class="eventDetails">19th - 23rd March</div>
+                <div class="eventDetails">YouTube @5:00 pm</div>
+                <a class="button"><div class="buttonText">Register</div></a>
+              </div>
+            </div>
+            <!-- <div class="w-full eventCard">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventName">Digital Profile</div>
+                <div class="eventDetails">Event on building a digital profile</div>
+              </div>
+              <div>
+                <div class="eventDetails">On 20th September</div>
+                <div class="eventDetails">YouTube @5:00 pm</div>
+                <a class="button"><div class="buttonText">Register</div></a>
+              </div>
+            </div>
+            <div class="w-full eventCard">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventName">Digital Profile</div>
+                <div class="eventDetails">Event on building a digital profile</div>
+              </div>
+              <div>
+                <div class="eventDetails">On 20th September</div>
+                <div class="eventDetails">YouTube @5:00 pm</div>
+                <a class="button"><div class="buttonText">Register</div></a>
+              </div>
+            </div>
+            <div class="w-full eventCard">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventName">Digital Profile</div>
+                <div class="eventDetails">Event on building a digital profile</div>
+              </div>
+              <div>
+                <div class="eventDetails">On 20th September</div>
+                <div class="eventDetails">YouTube @5:00 pm</div>
+                <a class="button"><div class="buttonText">Register</div></a>
+              </div>
+            </div>
+            <div class="w-full eventCard">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventName">Digital Profile</div>
+                <div class="eventDetails">Event on building a digital profile</div>
+              </div>
+              <div>
+                <div class="eventDetails">On 20th September</div>
+                <div class="eventDetails">YouTube @5:00 pm</div>
+                <a class="button"><div class="buttonText">Register</div></a>
+              </div>
+            </div>
+            <div class="w-full eventCard">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventName">Digital Profile</div>
+                <div class="eventDetails">Event on building a digital profile</div>
+              </div>
+              <div>
+                <div class="eventDetails">On 20th September</div>
+                <div class="eventDetails">YouTube @5:00 pm</div>
+                <a class="button"><div class="buttonText">Register</div></a>
+              </div>
+            </div> -->
+            <div class="w-full scrollBuffer">
+              <div class="eventLeft">
+                <div class="eventPoster"><img src="media/event.png" ></img></div>
+                <div class="eventName">Digital Profile</div>
+                <div class="eventDetails">Event on building a digital profile</div>
+              </div>
+              <div>
+                <div class="eventDetails">On 20th September</div>
+                <div class="eventDetails">YouTube @5:00 pm</div>
+                <a class="button"><div class="buttonText">Register</div></a>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+    <div class="aboutTab tab">
+      <div class="tabName">About us</div>
+      <div class="gridContainer">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1 m-4">
+            <div class="w-full aboutCard">
+              <!-- <div class="logo">
+                <img src="logos/logo.png"></img>
+              </div> -->
+              <div>
+                Computer Society of India is the first and largest body of computer professionals in India.<br /><br />
+                Started on 6 March 1965 by a few computer professionals, it has now grown to be the national body representing computer professionals.<br /><br />
+                With chapters in every major city and student chapters in major engineering colleges, CSI's goal is to educate students and professionals alike in the fields of upcoming technologies and new innovations.<br /><br />
+                CSI-VIT is the Vidyalankar Institute of Technology Chapter of CSI Mumbai.<br /><br />
+                Our goal is to cover topics that are not present in the course curriculum for engineering. To hold seminars and workshops for students to gain hands on experience and provide them opportunities to meet business professional and industry experts.
+              </div>
+            </div>
+          </div>
+        <div class="tabNameSubHeading">Contact Us</div>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 m-4 ">
+            <div class="aboutCard">
+                  <div class="w-full aboutCardDetails">
+                      <div class="social">
+                        <a href="https://www.youtube.com/channel/UCwezAg7cyDhER2_2pJeK0yQ"><img class="socialIcons" src="media/youtube.png"></img></a>
+                        <a href="https://www.instagram.com/csi_vit/"><img class="socialIcons" src="media/instagram.png"></img></a>
+                      </div>
+                      <div class="post">E-Mail</div><div class="name">csi.vidyalankar@gmail.com</div>
+                  </div>
+                  <div class="w-full aboutCardDetails">
+                          <p class="post">
+                            Address
+                          </p>
+                          <p class="name">
+                            Vidyalankar Educational Campus,<br />
+                            Vidyalankar College Road,<br />
+                            Sangam Nagar, Wadala (East),<br />
+                            Mumbai, Maharashtra 400037.
+                          </p>
+                  </div>
+            </div>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9553570768953!2d72.86824521542161!3d19.021688758619156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf39327f2915%3A0xb3cac731052aa3c9!2sVidyalankar+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1535438281512"  style="border: none" allowfullscreen></iframe>
+        </div>
+        <div class="w-full scrollBuffer">
+          <div class="eventLeft">
+            <div class="eventPoster"><img src="media/event.png" ></img></div>
+            <div class="eventName">Digital Profile</div>
+            <div class="eventDetails">Event on building a digital profile</div>
+          </div>
+          <div>
+            <div class="eventDetails">On 20th September</div>
+            <div class="eventDetails">YouTube @5:00 pm</div>
+            <a class="button"><div class="buttonText">Register</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="home-trigger">
+        <span class="material-icons">
+          home
+        </span>
+        Home
+      </div>
+      <div class="team-trigger">
+        <span class="material-icons">
+          group
+        </span>
+        Team
+      </div>
+      <div class="events-trigger active-tab">
+        <span class="material-icons">
+          event
+        </span>
+        Events
+      </div>
+      <div class="about-trigger">
+        <span class="material-icons">
+          info
+        </span>
+        About
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
